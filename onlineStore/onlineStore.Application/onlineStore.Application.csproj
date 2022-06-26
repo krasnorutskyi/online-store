@@ -7,8 +7,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="IRepositories" />
       <Folder Include="IServices" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\onlineStore.Core\onlineStore.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Data.Entity.Repository" Version="2.0.0.1" />
     </ItemGroup>
 
 </Project>
