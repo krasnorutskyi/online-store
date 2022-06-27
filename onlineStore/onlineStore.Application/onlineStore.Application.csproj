@@ -7,10 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="IServices" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\onlineStore.Core\onlineStore.Core.csproj" />
     </ItemGroup>
 
