@@ -7,7 +7,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
       <PackageReference Include="System.Data.Entity.Repository" Version="2.0.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\onlineStore.Application\onlineStore.Application.csproj" />
+      <ProjectReference Include="..\onlineStore.Core\onlineStore.Core.csproj" />
     </ItemGroup>
 
 </Project>
