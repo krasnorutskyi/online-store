@@ -4,9 +4,9 @@ namespace onlineStore.Application.IServices;
 
 public interface IOrdersService
 {
-    Task AddAsync(Item item);
+    void Add(Order order, Item item);
     
-    Task DeleteAsync(Item item);
+    void Delete(Order order, Item item);
 
-    Task ConfirmAsync(Order order);
+    void ConfirmOrder(Order order);
 }
