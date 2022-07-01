@@ -24,6 +24,11 @@ namespace onlineStore.Infrastructure.Repositories
             this._table.AddAsync(item);
             this.SaveAsync();
         }
+        
+        public void Attach(params object[] obj)
+        {
+            this._db.AttachRange(obj);
+        }
 
         public async Task UpdateAsync(TEntity item)
         {

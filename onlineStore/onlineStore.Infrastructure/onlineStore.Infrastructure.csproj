@@ -10,6 +10,7 @@
       <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="6.0.6" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0" />
       <PackageReference Include="System.Data.Entity.Repository" Version="2.0.0.1" />
     </ItemGroup>
 

@@ -1,12 +1,16 @@
+using onlineStore.Application.Descriptions;
+using onlineStore.Application.DTOs;
 using onlineStore.Core.Entities;
 
 namespace onlineStore.Application.IServices
 {
     public interface IUsersService
     {
-        Task<TokensModel> RegisterAsync(User user);
+        Task<OperationDetails> RegisterAsync(UserDTO userDTO);
 
-        Task<TokensModel> LoginAsync(User user);
+        Task<OperationDetails> LoginAsync(UserDTO userDTO);
+        
+        Task<User?> GetAsync(string email);
 
         Task UpdateAsync(User user);
 

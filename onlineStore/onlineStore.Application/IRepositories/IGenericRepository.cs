@@ -7,6 +7,8 @@ namespace onlineStore.Application.IRepositories
     public interface IGenericRepository<TEntity> where TEntity : EntityBase
     {
         Task AddAsync(TEntity item);
+        
+        void Attach(params object[] obj);
 
         Task UpdateAsync(TEntity item);
 
